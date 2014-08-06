@@ -358,6 +358,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignInBackButtonTouch:" destination="nAZ-Gt-Z2z" eventType="touchUpInside" id="CDr-76-cda"/>
+                                    <action selector="onSignInBackButtonTouch:" destination="Iji-PT-weL" eventType="touchUpInside" id="c3C-2V-l0i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OY4-SD-Eqd">
@@ -1000,14 +1001,14 @@
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="axo-9r-IgA"/>
+        <segue reference="LL3-2j-lCd"/>
+        <segue reference="wI0-tm-fHc"/>
+        <segue reference="qSD-lk-bLu"/>
         <segue reference="UlV-Wg-SSX"/>
         <segue reference="bcZ-rA-Um5"/>
         <segue reference="fI2-1x-Y8u"/>
-        <segue reference="qSD-lk-bLu"/>
         <segue reference="zW3-9J-wyy"/>
-        <segue reference="LL3-2j-lCd"/>
-        <segue reference="axo-9r-IgA"/>
-        <segue reference="wI0-tm-fHc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.48319715261459351" blue="0.91104888916015625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
