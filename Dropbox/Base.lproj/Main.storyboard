@@ -144,7 +144,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RCB-xA-tqP" kind="custom" customClass="NoAnimationPushSegue" id="uhV-6Y-hJ2"/>
+                                    <segue destination="RCB-xA-tqP" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="uhV-6Y-hJ2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Pw-b6-iqK">
@@ -184,7 +184,7 @@
         <!--Sign In Root View Controller-->
         <scene sceneID="iUd-OK-mOA">
             <objects>
-                <viewController id="Ov9-2v-WKX" customClass="SignInRootViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInRootView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ov9-2v-WKX" customClass="SignInRootViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zJR-fM-0X6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -261,7 +261,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Iji-PT-weL" kind="custom" customClass="DEPushNoAnimationSegue" customModule="Dropbox" id="zWV-gs-IdX"/>
+                                    <segue destination="Iji-PT-weL" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="zWV-gs-IdX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -420,6 +420,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UHl-Qb-4U2" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="Q4A-so-CtV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aSv-cF-HcE">
                                 <rect key="frame" x="259" y="27" width="54" height="30"/>
@@ -427,6 +430,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dV2-Nb-UG8" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="xEg-Yd-976"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sq6-US-4Gb">
                                 <rect key="frame" x="0.0" y="469" width="320" height="44"/>
@@ -479,6 +485,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dV2-Nb-UG8" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="TBw-Mg-1Jz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K4d-Ki-RJW">
                                 <rect key="frame" x="0.0" y="80" width="320" height="208"/>
@@ -486,6 +495,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dBo-ZM-Khb" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="v7D-IL-y9s"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HgW-mz-OAI">
                                 <rect key="frame" x="6" y="27" width="93" height="30"/>
@@ -524,6 +536,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dV2-Nb-UG8" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="oHq-io-tbK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IGI-76-WfU">
                                 <rect key="frame" x="0.0" y="78" width="320" height="208"/>
@@ -531,6 +546,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UXg-nA-4wk" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="MzF-Gp-bKC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zWa-47-wcE">
                                 <rect key="frame" x="6" y="27" width="93" height="30"/>
@@ -579,6 +597,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dV2-Nb-UG8" kind="custom" customClass="NoAnimationPushSegue" customModule="Dropbox" id="ZBL-nq-H2o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -827,7 +848,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="dNu-WN-2m0" kind="modal" id="bcZ-rA-Um5"/>
+                                            <action selector="onSignOutButtonTouch:" destination="eUc-fd-tJk" eventType="touchUpInside" id="oSR-K2-Pir"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1142,10 +1163,11 @@
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="UlV-Wg-SSX"/>
-        <segue reference="bcZ-rA-Um5"/>
-        <segue reference="qSD-lk-bLu"/>
+        <segue reference="xEg-Yd-976"/>
         <segue reference="YMZ-4H-1Br"/>
+        <segue reference="jej-ZA-JwN"/>
+        <segue reference="UlV-Wg-SSX"/>
+        <segue reference="qSD-lk-bLu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.48319715261459351" blue="0.91104888916015625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

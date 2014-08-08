@@ -16,6 +16,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         settingsScrollView.scrollEnabled = true
         settingsScrollView.contentSize = CGSizeMake(320, 772)
+        
+        let signInRoot = self.storyboard.instantiateViewControllerWithIdentifier("SignInRootView") as SignInRootViewController
+        println("\(signInRoot.view)")
         // Do any additional setup after loading the view.
     }
 
@@ -24,8 +27,10 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     @IBAction func onSignOutButtonTouch(sender: AnyObject) {
-        navigationController.popToRootViewControllerAnimated(true)
+        let signInRoot = self.storyboard.instantiateViewControllerWithIdentifier("SignInRootView") as SignInRootViewController
+        navigationController.popToViewController(signInRoot, animated: true)
     }
     /*
     // MARK: - Navigation
