@@ -23,6 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onSignInButtonTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Di3-5x-a1v"/>
                                     <segue destination="dNu-WN-2m0" kind="modal" id="jej-ZA-JwN"/>
                                 </connections>
                             </button>
@@ -40,6 +41,10 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCreateAccountButtonTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PYd-1R-E2v"/>
+                                    <segue destination="dNu-WN-2m0" kind="modal" id="8ak-jB-wZ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bEM-iP-lov">
                                 <rect key="frame" x="774" y="462" width="52" height="30"/>
@@ -48,6 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onSignInButtonTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1CI-eM-XRR"/>
                                     <segue destination="dNu-WN-2m0" kind="modal" id="WJL-w4-2u8"/>
                                 </connections>
                             </button>
@@ -122,7 +128,7 @@
         <!--Sign In Root View Controller-->
         <scene sceneID="iUd-OK-mOA">
             <objects>
-                <viewController storyboardIdentifier="SignInRootView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ov9-2v-WKX" customClass="SignInRootViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ov9-2v-WKX" customClass="SignInRootViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zJR-fM-0X6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,7 +145,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e1h-sW-CWP" kind="push" id="YMZ-4H-1Br"/>
+                                    <segue destination="e1h-sW-CWP" kind="push" identifier="createAccountRootToFormSegue" id="YMZ-4H-1Br"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VDt-aG-Kxd">
@@ -164,7 +170,7 @@
         <!--Sign In View 0-->
         <scene sceneID="q70-sC-j28">
             <objects>
-                <viewController id="nAZ-Gt-Z2z" userLabel="Sign In View 0" customClass="SignInViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="nAZ-Gt-Z2z" userLabel="Sign In View 0" customClass="SignInViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7S4-IW-yFm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,7 +221,7 @@
         <!--Sign In-->
         <scene sceneID="gt6-hd-8Od">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dNu-WN-2m0" userLabel="Sign In" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignInRootView" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="dNu-WN-2m0" userLabel="Sign In" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXX-wB-r0I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -787,7 +793,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="2TV-4E-JET" kind="unwind" unwindAction="reset:" id="gL8-iX-pwG"/>
+                                            <action selector="onSignOutButtonTouch:" destination="eUc-fd-tJk" eventType="touchUpInside" id="hO7-SN-J4H"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -801,7 +807,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTy-6K-GhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="2TV-4E-JET" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4762" y="-1134"/>
         </scene>
@@ -926,7 +931,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="0ec-fB-eim" kind="unwind" unwindAction="reset:" id="eA6-r5-2ji"/>
+                                            <action selector="onSignOutButtonTouch:" destination="pPz-hh-W2I" eventType="touchUpInside" id="NmX-bJ-Iy8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -940,7 +945,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpJ-ZV-pk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="0ec-fB-eim" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7006" y="-665"/>
         </scene>
@@ -1107,7 +1111,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="jej-ZA-JwN"/>
         <segue reference="xEg-Yd-976"/>
-        <segue reference="qSD-lk-bLu"/>
+        <segue reference="wbk-Uv-9yc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.48319715261459351" blue="0.91104888916015625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

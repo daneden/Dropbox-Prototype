@@ -21,6 +21,7 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Always set the back button to return to the root view
     @IBAction func onCreateAccountBackButtonTouch(sender: AnyObject) {
         navigationController.popToRootViewControllerAnimated(true)
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Create custom push segue without animation
 class NoAnimationPushSegue: UIStoryboardSegue {
     override func perform () {
         let src = self.sourceViewController as UIViewController

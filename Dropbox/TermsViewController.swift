@@ -21,6 +21,7 @@ class TermsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Close the terms modal
     @IBAction func onDonebuttonTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }

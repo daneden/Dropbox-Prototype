@@ -21,7 +21,18 @@ class WelcomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func onSignInButtonTouch(sender: AnyObject) {
+        // Set referrer for the sign in/create account screen to "true"
+        // Triggers push segue to the sign in flow
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "signInReferrer")
+    }
+    
+    @IBAction func onCreateAccountButtonTouch(sender: AnyObject) {
+        // Set referrer for the sign in/create account screen to "false"
+        // Triggers push segue to the create account flow
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "signInReferrer")
+    }
+    
     /*
     // MARK: - Navigation
 

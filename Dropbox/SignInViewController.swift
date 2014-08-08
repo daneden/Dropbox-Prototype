@@ -23,23 +23,14 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Always set the back button to return to the root view
     @IBAction func onSignInBackButtonTouch(sender: AnyObject) {
         navigationController.popToRootViewControllerAnimated(true)
     }
 
+    // Close the terms modal when the user hits "Cancel"
     @IBAction func onCancelSignInHelpButtonTouch(sender: AnyObject) {
         dismissViewControllerAnimated(false, completion: nil)
-    }
-    
-    @IBAction func reset(segue: UIStoryboardSegue) {
-        state = 0
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        if(state == 0) {
-            navigationController.popToRootViewControllerAnimated(true)
-            state = 1
-        }
     }
     
 //    // MARK: - Navigation

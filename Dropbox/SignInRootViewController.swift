@@ -9,12 +9,35 @@
 import UIKit
 
 class SignInRootViewController: UIViewController {
+    
+    var flags = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        performSegueWithIdentifier("signInRootToFormSegue", sender: self)
+        
+        // If the referrer flag is set...
+        if(flags.objectForKey("signInReferrer")) {
+            
+            // If we were sent here by a "Sign In" button...
+            if(flags.objectForKey("signInReferrer") as NSObject == true) {
+                
+                // Segue to the sign in flow
+                performSegueWithIdentifier("signInRootToFormSegue", sender: self)
+                
+                
+            } else {
+                
+                // Segue to the create account flow
+                performSegueWithIdentifier("createAccountRootToFormSegue", sender: self)
+                
+            }
+            
+            // Remove the flag and release the variable
+            flags.removeObjectForKey("signInReferrer")
+            flags = nil
+        }
     }
 
     override func didReceiveMemoryWarning() {
