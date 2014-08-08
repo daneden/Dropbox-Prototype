@@ -17,10 +17,9 @@ class SettingsViewController: UIViewController {
         settingsScrollView.scrollEnabled = true
         settingsScrollView.contentSize = CGSizeMake(320, 772)
         
-        let signInRoot = self.storyboard.instantiateViewControllerWithIdentifier("SignInRootView") as SignInRootViewController
-        println("\(signInRoot.view)")
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
