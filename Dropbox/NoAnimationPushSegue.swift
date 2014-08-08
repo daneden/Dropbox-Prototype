@@ -1,14 +1,14 @@
 //
-//  DEPushNoAnimationSegue.swift
+//  NoAnimationPushSegue.swift
 //  Dropbox
 //
-//  Created by Daniel Eden on 04/08/2014.
+//  Created by Daniel Eden on 07/08/2014.
 //  Copyright (c) 2014 Daniel Eden. All rights reserved.
 //
 
 import UIKit
 
-class DEPushNoAnimationSegue: UIStoryboardSegue {
+class NoAnimationPushSegue: UIStoryboardSegue {
     override func perform () {
         let src = self.sourceViewController as UIViewController
         let dst = self.destinationViewController as UIViewController

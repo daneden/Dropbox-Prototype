@@ -1,21 +1,18 @@
 //
-//  SettingsViewController.swift
+//  TermsViewController.swift
 //  Dropbox
 //
-//  Created by Daniel Eden on 05/08/2014.
+//  Created by Daniel Eden on 07/08/2014.
 //  Copyright (c) 2014 Daniel Eden. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class TermsViewController: UIViewController {
 
-    @IBOutlet weak var settingsScrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsScrollView.scrollEnabled = true
-        settingsScrollView.contentSize = CGSizeMake(320, 772)
+
         // Do any additional setup after loading the view.
     }
 
@@ -23,10 +20,11 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func onSignOutButtonTouch(sender: AnyObject) {
-        navigationController.popToRootViewControllerAnimated(true)
+    
+    @IBAction func onDonebuttonTouch(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
+
     /*
     // MARK: - Navigation
 
