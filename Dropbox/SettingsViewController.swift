@@ -26,11 +26,8 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
     
-    @IBAction func onSignOutButtonTouch(sender: AnyObject) {
-        let signInRoot = self.storyboard.instantiateViewControllerWithIdentifier("SignInRootView") as SignInRootViewController
-        navigationController.popToViewController(signInRoot, animated: true)
-    }
     /*
     // MARK: - Navigation
 
